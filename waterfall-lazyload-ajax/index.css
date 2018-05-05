@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ct ul, .ct li {
+    list-style: none;
+}
+
+#load {
+    visibility: hidden;
+    margin-top: 20px;
+}
+
+.ct {
+    margin: 0 auto;
+    width: 900px;
+}
+
+.ct > .waterfall {
+    position: relative;
+}
+
+.waterfall > .item {
+    position: absolute;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 280px;
+    margin: 10px;
+    border-radius: 2px;
+    transition: all 1s;
+}
+
+.waterfall .item.hide {
+    visibility: hidden;
+}
+
+.waterfall .item > a {
+    text-decoration: none;
+    color: #444;
+}
+
+.waterfall .item > a img {
+    text-align: center;
+    max-width: 100%;
+}
+
+.waterfall .item .title {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.waterfall .item .desc {
+    /*  white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;*/
+    color: #504f4f;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}

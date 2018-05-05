@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.waterfall {
+    text-align: center;
+    position: relative;
+    margin: 20px;
+    height: 100vh;
+}
+
+.waterfall > .item {
+    width: 200px;
+    float: left;
+    position: absolute;
+    transition: all 1s;
+    margin-top: 20px;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.item.h1 {
+    background: #ffd400;
+    height: 100px;
+}
+
+.item.h2 {
+    background: #b2d235;
+    height: 400px;
+}
+
+.item.h3 {
+    background: #9b95c9;
+    height: 300px;
+}
+
+.item.h4 {
+    background: #84bf96;
+    height: 350px;
+}
