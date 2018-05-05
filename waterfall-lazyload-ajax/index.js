@@ -1,5 +1,5 @@
 /*
-jsonp 接口参数： http://platform.sina.com.cn/slide/album_tech?jsoncallback=func&app_key=1271687855&num=3&page=4
+jsonp 接口参数： https://platform.sina.com.cn/slide/album_tech?jsoncallback=func&app_key=1271687855&num=3&page=4
 
 思路：
 1. 获取数据
@@ -50,7 +50,7 @@ function getNews(callback) {
     if (!isDataArrive) return;
     isDataArrive = false;
     $.ajax({
-        url: 'http://platform.sina.com.cn/slide/album_tech',
+        url: 'https://platform.sina.com.cn/slide/album_tech',
         dataType: 'jsonp',
         jsonp: "jsoncallback",
         data: {
